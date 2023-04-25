@@ -1,18 +1,25 @@
-.container {
-  max-width: 1224px;
-  margin: 0 auto;
+body {
+  font-family: "roboto", sans-serif;
+}
+.container,
+section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-header {
-  margin: 0 auto;
-  height: 100px;
+.container {
+  max-width: 1224px;
+  flex-direction: column;
+  margin-top: 40px;
 }
 h1 {
   color: red;
   font-size: 4rem;
+}
+p,
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 h3 {
   font-size: 1rem;
@@ -20,35 +27,22 @@ h3 {
   margin: 10px 0;
 }
 section {
-  display: flex;
+  justify-content: left;
   padding: 20px 0;
+  margin-top: 20px;
   border-bottom: solid 1px rgb(206, 206, 206);
   gap: 20px;
-  width: 100%;
+  width: 60%;
 }
 img {
   object-fit: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
 }
-p,
-h2,
-section > div {
-  flex: 3;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-section > div:nth-child(1) {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .direct {
   color: red;
 }
 section > div > div {
   display: flex;
+  justify-content: space-between;
   width: 160px;
 }

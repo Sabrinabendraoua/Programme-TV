@@ -20,7 +20,11 @@ function App() {
               <div>
                 <p>{programmeTV.duration}</p>
                 <p className="direct">
-                  {programmeTV.direct ? "direct" : "inédit"}
+                  {programmeTV.direct
+                    ? ". direct"
+                    : programmeTV.isUnseen
+                    ? ". inédit"
+                    : " "}
                 </p>
               </div>
             </div>
